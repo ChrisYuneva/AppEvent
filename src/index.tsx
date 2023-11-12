@@ -5,11 +5,23 @@ import App from './app/App';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Basket from './pages/basket/basket';
+import Catalog from './pages/catalog/catalog';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <Catalog />
+      },
+      {
+        path: '/basket',
+        element: <Basket />,
+      },
+    ]
   },
 ]);
 

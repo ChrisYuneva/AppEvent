@@ -1,0 +1,39 @@
+.container {
+    padding: 24px;
+}
+
+.container__basket {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.container__basket_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding: 8px;
+}
+
+.container__basket_itemTitle {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.container__basket_total {
+    align-self: end;
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 21px;
+    padding: 16px 8px;
+}
+
+.container_empty {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+}
