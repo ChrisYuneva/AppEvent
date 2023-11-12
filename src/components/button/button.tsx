@@ -9,7 +9,7 @@ interface ButtonProps {
 function Button({ isBuy, children, onClick }: ButtonProps) {
     return (
         <button onClick={onClick} className={isBuy ? `${style.btn} ${style.btn_active}` : `${style.btn}`}>{children}</button>
-    )
+    );
 }
 
 export default Button;

@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const basket = JSON.parse(localStorage.getItem('basket') ?? '');
     dispatch(getBasket(basket));
-  }, [])
+  }, []);
 
   return (
     <div id="detail">

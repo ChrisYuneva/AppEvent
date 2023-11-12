@@ -3,7 +3,7 @@ import { Catalog, InitialTypeBasket, InitialTypeCatalog, Product } from '../type
 
 const initialState: InitialTypeBasket = {
     basket: []
-}
+};
 
 export const basketSlice = createSlice({
     name: 'basket',
@@ -21,4 +21,4 @@ export const basketSlice = createSlice({
             state.basket = action.payload;
         }
     }
-})
+});

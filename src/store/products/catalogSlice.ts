@@ -4,7 +4,7 @@ import { Catalog, InitialTypeCatalog } from '../types';
 const initialState: InitialTypeCatalog = {
     catalog: [],
     error: null
-}
+};
 
 export const catalogSlice = createSlice({
     name: 'catalog',
@@ -19,4 +19,4 @@ export const catalogSlice = createSlice({
             state.error = action.payload;
         }
     }
-})
+});

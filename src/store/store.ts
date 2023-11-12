@@ -7,7 +7,7 @@ export const store = configureStore({
     catalog: catalogSlice.reducer,
     basket: basketSlice.reducer
   },
-})
+});
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

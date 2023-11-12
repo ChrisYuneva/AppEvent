@@ -21,7 +21,7 @@ function Header() {
                 <span className={ style.header__count }>{basket.length}</span>
             </Link>
         </header>
-    )
+    );
 }
 
 export default Header;
