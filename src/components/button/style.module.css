@@ -15,7 +15,7 @@
   border: 1px solid #141212;
 }
 
-.btn_active {
+.btn__active {
   background-color: #ffcc00;
   transition: ease 0.4s;
   color: #141212;

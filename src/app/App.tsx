@@ -9,11 +9,20 @@ function App() {
   const dispatch = useAppDispatch();
   const { getBasket } = basketSlice.actions;
 
+  /**
+   * При первом открытии страницы получаются данные из localStorage о состоянии корзины
+   * и записываются в store для корректного отображения состояния на странице
+   */
   useEffect(() => {
     const basket = JSON.parse(localStorage.getItem('basket') ?? '');
     dispatch(getBasket(basket));
   }, []);
 
+  /**
+   * loyout страницы
+   * Header используется для навигации по приложению
+   * Outlet для отображения контента
+   */
   return (
     <div id="detail">
       <Header />

@@ -1,5 +1,6 @@
 export interface InitialTypeCatalog {
     catalog: Product[],
+    isLoading: boolean,
     error: string | null
 }
 

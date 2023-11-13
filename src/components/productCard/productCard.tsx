@@ -18,11 +18,14 @@ function ProductCard({ product }: productCardProps) {
 
   const [isBuy, setIsBuy] = useState(false);
 
+  /**
+   * Функция добавления товара в корзину
+   * Если товар уже был добавлен в корзину, то произойдет редирект в корзину
+   */
   function add() {
-    if (isBuy) {
+    if(isBuy) {
       navigate('/basket');
-    } 
-    else {
+    } else {
       dispatch(addProduct(product));
       setIsBuy(true);
     }
@@ -33,8 +36,12 @@ function ProductCard({ product }: productCardProps) {
       <span className={style.card__text}>{product.name}</span>
       <img src={product.image} alt={product.name} className={style.card__img} />
       <div className={style.card__buy}>
-        <span className={`${style.card__text} ${style.card__price}`}>{product.price} &#8381;</span>
-        <Button onClick={add} isBuy={isBuy}>{isBuy ? 'Оформить заказ' : 'Добавить в корзину'}</Button>
+        <span className={`${style.card__text} ${style.card__price}`}>
+          {product.price} &#8381;
+        </span>
+        <Button onClick={add} isBuy={isBuy}>
+          {isBuy ? 'Оформить заказ' : 'Добавить в корзину'}
+        </Button>
       </div>
     </div>
   );

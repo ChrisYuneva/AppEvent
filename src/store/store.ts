@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { catalogSlice } from './products/catalogSlice';
+import { catalogSlice } from './catalog/catalogSlice';
 import { basketSlice } from './basket/basketSlice';
 
 export const store = configureStore({
