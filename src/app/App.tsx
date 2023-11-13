@@ -14,8 +14,10 @@ function App() {
    * и записываются в store для корректного отображения состояния на странице
    */
   useEffect(() => {
-    const basket = JSON.parse(localStorage.getItem('basket') ?? '');
-    dispatch(getBasket(basket));
+    const basket = localStorage.getItem('basket');
+    if(basket) {
+      dispatch(getBasket(JSON.parse(basket)));
+    }
   }, []);
 
   /**
