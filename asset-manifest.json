@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/AppEvent/static/css/main.a08e39e6.css",
-    "main.js": "/AppEvent/static/js/main.09fe6db9.js",
+    "main.js": "/AppEvent/static/js/main.24088c73.js",
     "static/media/basket.svg": "/AppEvent/static/media/basket.ccb855d06951a35f40d4bdb551a88bf8.svg",
     "index.html": "/AppEvent/index.html",
     "main.a08e39e6.css.map": "/AppEvent/static/css/main.a08e39e6.css.map",
-    "main.09fe6db9.js.map": "/AppEvent/static/js/main.09fe6db9.js.map"
+    "main.24088c73.js.map": "/AppEvent/static/js/main.24088c73.js.map"
   },
   "entrypoints": [
     "static/css/main.a08e39e6.css",
-    "static/js/main.09fe6db9.js"
+    "static/js/main.24088c73.js"
   ]
 }
