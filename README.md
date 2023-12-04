@@ -1,6 +1,7 @@
 # App Event
 
 Веб-приложение каталога товаров и корзины.\
+Деплой: [https://chrisyuneva.github.io/AppEvent/](https://chrisyuneva.github.io/AppEvent/) \
 Используемый стек: 
 - React v.18.2.0
 - React-router-dom v.6.18.0
