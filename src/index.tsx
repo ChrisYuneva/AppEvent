@@ -8,22 +8,27 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Basket from './pages/basket/basket';
 import Catalog from './pages/catalog/catalog';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        {
+          path: '/',
+          element: <Catalog />,
+        },
+        {
+          path: '/basket',
+          element: <Basket />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    children: [
-      {
-        path: '/',
-        element: <Catalog />,
-      },
-      {
-        path: '/basket',
-        element: <Basket />,
-      },
-    ],
-  },
-]);
+    basename: '/AppEvent',
+  }
+);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
