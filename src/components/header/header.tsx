@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className={style.header}>
       <h1 className={style.header__logo} onClick={() => navigate('/')}>
-        App Event Test
+        App Event
       </h1>
       <Link to={'/'} className={style.header__link}>
         Каталог
